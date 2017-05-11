@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Sejika3D - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Build : warning : failed to (or don't know how to) build 'E:\current\Sejika\Sejika3D\hlp\Sejika3D.hpj'
+
+Build : warning : failed to (or don't know how to) build 'E:\current\Sejika\Sejika3D\hlp\AfxCore.rtf'
+
+Creating temporary file "E:\DOCUME~1\MONA~1.MIN\LOCALS~1\Temp\RSP16C.bat" with contents
+[
+@echo off
+start /wait hcw /C /E /M "hlp\Sejika3D.hpj"
+if errorlevel 1 goto :Error
+if not exist "hlp\Sejika3D.hlp" goto :Error
+copy "hlp\Sejika3D.hlp" .\debug_release
+goto :done
+:Error
+echo hlp\Sejika3D.hpj(1) : error:
+type "hlp\Sejika3D.log"
+:done
+]
+Creating command line "E:\DOCUME~1\MONA~1.MIN\LOCALS~1\Temp\RSP16C.bat"
+Creating command line "rc.exe /l 0x809 /fo"debug_intermediate/Sejika3D.res" /d "_DEBUG" /d "_AFXDLL" "E:\current\Sejika\Sejika3D\Sejika3D.rc"" 
+Making help file...
+hlp\Sejika3D.hpj(1) : error:
+The system cannot find the file specified.
+Error executing e:\winnt\system32\cmd.exe.
+<h3>Output Window</h3>
+Creating temporary file "E:\DOCUME~1\MONA~1.MIN\LOCALS~1\Temp\RSP16D.tmp" with contents
+[
+/nologo /o"debug_release/Sejika3D.bsc" 
+.\debug_intermediate\StdAfx.sbr
+.\debug_intermediate\CtrlPaneBar.sbr
+.\debug_intermediate\DlgMatrix.sbr
+.\debug_intermediate\FileIn.sbr
+.\debug_intermediate\MainFrm.sbr
+.\debug_intermediate\PanelBase.sbr
+.\debug_intermediate\PanelNum.sbr
+.\debug_intermediate\PanelTree.sbr
+.\debug_intermediate\Sejika3D.sbr
+.\debug_intermediate\SejikaSheet.sbr
+.\debug_intermediate\SejikaStatus.sbr
+.\debug_intermediate\SJBlock.sbr
+.\debug_intermediate\SJBounds.sbr
+.\debug_intermediate\SJBox.sbr
+.\debug_intermediate\SJLine.sbr
+.\debug_intermediate\SJMat3.sbr
+.\debug_intermediate\SJMatrix.sbr
+.\debug_intermediate\SJNode.sbr
+.\debug_intermediate\SJNodeCam.sbr
+.\debug_intermediate\SJNodeMesh.sbr
+.\debug_intermediate\SJNodePush.sbr
+.\debug_intermediate\SJNodeSwitch.sbr
+.\debug_intermediate\SJNodeTransManip.sbr
+.\debug_intermediate\SJPoint.sbr
+.\debug_intermediate\SJRotation.sbr
+.\debug_intermediate\SJSG.sbr
+.\debug_intermediate\SJVec2s.sbr
+.\debug_intermediate\SJVec3.sbr
+.\debug_intermediate\SJVector.sbr
+.\debug_intermediate\SJView.sbr
+.\debug_intermediate\ThreadSejika.sbr
+.\debug_intermediate\WRITEAVI.SBR]
+Creating command line "bscmake.exe @E:\DOCUME~1\MONA~1.MIN\LOCALS~1\Temp\RSP16D.tmp"
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Sejika3D.exe - 1 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

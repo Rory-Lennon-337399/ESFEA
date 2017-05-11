@@ -1,0 +1,560 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ESFEA2D.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SEJIKA              ICON    DISCARDABLE     "res\\icon2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 259, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ESFDA"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         133,IDB_DONUT,"Static",SS_BITMAP,0,0,133,92
+    LTEXT           "ESFEA Version 1.0",IDC_STATIC,160,5,75,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003 Rory F. Lennon",IDC_STATIC,140,20,
+                    119,8
+    DEFPUSHBUTTON   "OK",IDOK,155,65,80,14,WS_GROUP
+    LTEXT           "All Rights Reserved",IDC_STATIC,160,35,70,8
+END
+
+IDD_PANEL_TREE DIALOGEX 0, 0, 161, 320
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_TREE,"SysTreeView32",TVS_HASLINES | 
+                    TVS_SHOWSELALWAYS | WS_TABSTOP,0,0,119,263,
+                    WS_EX_CLIENTEDGE
+END
+
+IDD_PANEL_NUM DIALOG DISCARDABLE  0, 0, 336, 82
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Num",IDC_STATIC,0,0,260,80
+END
+
+IDD_MATRIX DIALOG DISCARDABLE  0, 0, 282, 263
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDP_NODES DIALOG DISCARDABLE  0, 0, 536, 111
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDE_X,30,15,55,12,ES_RIGHT
+    EDITTEXT        IDE_Y,30,35,55,12,ES_RIGHT
+    LTEXT           "X",IDC_INPUT_1,10,15,15,8
+    LTEXT           "Y",IDC_INPUT_2,10,35,15,8
+    GROUPBOX        "Create Nodes",IDC_STATIC,0,0,100,95
+    PUSHBUTTON      "&Create",IDC_CREATE,10,65,80,14
+    GROUPBOX        "Copy Nodes",IDC_STATIC,110,0,105,95
+    EDITTEXT        IDE_DX,140,15,55,12,ES_RIGHT
+    EDITTEXT        IDE_DY,140,35,55,12,ES_RIGHT
+    LTEXT           "DX",IDC_INPUT_3,120,15,15,8
+    LTEXT           "DY",IDC_INPUT_4,120,35,15,8
+    PUSHBUTTON      "Copy &Selected",IDC_COPY,120,65,80,14
+END
+
+IDP_SEL_ND DIALOG DISCARDABLE  0, 0, 336, 82
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Select Nodes",IDC_STATIC,0,0,115,80
+    PUSHBUTTON      "&Unselect All",IDC_UNSEL_NODE,15,15,80,14
+    PUSHBUTTON      "&Select All",IDC_SEL_ALL,15,35,80,14
+END
+
+IDP_LOAD DIALOG DISCARDABLE  0, 0, 531, 156
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Boundary Conditions",IDC_STATIC,0,0,100,95
+    PUSHBUTTON      "&Fix Selected",IDC_FIX,10,55,80,14
+    EDITTEXT        IDE_FX,275,15,55,12,ES_RIGHT
+    EDITTEXT        IDE_FY,275,30,55,12,ES_RIGHT
+    LTEXT           "FX",IDC_STATIC,255,15,15,8
+    LTEXT           "FY",IDC_STATIC,255,30,15,8
+    GROUPBOX        "Nodal Forces",IDC_STATIC,245,0,225,95
+    PUSHBUTTON      "&Apply Force",IDC_APPLY,260,55,80,14
+    LTEXT           "Pulse Time",IDC_STATIC,361,15,40,8
+    EDITTEXT        IDE_FT,407,15,30,12,ES_RIGHT
+    LTEXT           "Secs",IDC_STATIC,445,15,20,8
+    LTEXT           "N",IDC_STATIC,335,15,15,10
+    LTEXT           "N",IDC_STATIC,335,30,15,10
+    GROUPBOX        "Lumped Mass",IDC_STATIC,110,0,125,95
+    PUSHBUTTON      "Apply Mass",IDC_MASS,125,55,80,14
+    EDITTEXT        IDE_MASS,150,20,55,12,ES_RIGHT
+    LTEXT           "Mass",IDC_INPUT_5,125,20,20,8
+    LTEXT           "kg",IDC_STATIC,210,20,15,8
+END
+
+IDP_ANIMATE DIALOG DISCARDABLE  0, 0, 536, 111
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "A&nimate",IDC_DYNAMIC,255,41,80,14
+    GROUPBOX        "Display",IDC_STATIC,240,0,110,95
+    LTEXT           "Viscous Damping",IDC_STATIC,15,50,60,10
+    EDITTEXT        IDE_DAMP,85,50,30,12,ES_RIGHT
+    LTEXT           "%",IDC_STATIC,120,50,8,8
+    PUSHBUTTON      "&Reset",IDC_RESET,255,20,80,14
+    LTEXT           "Analysis Time",IDC_STATIC,15,20,60,8
+    EDITTEXT        IDE_TIME,85,20,30,12,ES_RIGHT
+    LTEXT           "Secs",IDC_STATIC,121,20,20,8
+    LTEXT           "Time Step",IDC_STATIC,15,35,60,8
+    EDITTEXT        IDE_DT,85,35,30,12,ES_RIGHT
+    LTEXT           "Secs",IDC_STATIC,121,35,20,8
+    LTEXT           "Use Modes",IDC_STATIC,15,65,60,8
+    EDITTEXT        IDE_FRAC,85,65,30,12,ES_RIGHT
+    LTEXT           "%",IDC_STATIC,120,65,8,8
+    GROUPBOX        "Solution Parameters",IDC_STATIC,0,0,150,95
+    RADIOBUTTON     "Implicit",IDR_IMPLICIT,175,25,45,10
+    GROUPBOX        "Integration",IDC_STATIC,160,0,70,95
+    CONTROL         "Explicit",IDR_EXPLICIT,"Button",BS_AUTORADIOBUTTON,175,
+                    40,45,10
+END
+
+IDP_MODAL DIALOG DISCARDABLE  0, 0, 536, 111
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Display Modes",-1,0,0,295,95
+    EDITTEXT        IDE_MODENUM,55,15,30,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "Mode Number",-1,15,15,30,25
+    PUSHBUTTON      "&Display",IDC_ANIMATE_MODE,15,50,85,14
+    CONTROL         "Spin1",IDC_SPIN,"msctls_updown32",UDS_ARROWKEYS,90,15,
+                    11,25
+    EDITTEXT        IDE_EIGVAL,195,30,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Frequency",-1,150,30,35,15
+    LTEXT           "Hz",-1,240,30,15,8
+    EDITTEXT        IDE_NDOFS,195,15,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Num DOFs",-1,150,15,40,15
+    EDITTEXT        IDE_PERIOD,195,46,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Period",-1,150,46,35,15
+    LTEXT           "Secs",-1,240,46,15,8
+END
+
+IDP_ELEMENTS DIALOG DISCARDABLE  0, 0, 531, 156
+STYLE WS_CHILD | WS_DISABLED
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Material Properties",IDC_STATIC,7,7,158,95
+    PUSHBUTTON      "Apply Material",IDC_MAT,25,66,120,14
+    EDITTEXT        IDE_AREA,75,26,55,12,ES_RIGHT
+    LTEXT           "Area",IDC_INPUT_5,29,25,20,8
+    LTEXT           "M",IDC_STATIC,135,26,8,8
+    EDITTEXT        IDE_ELAST,75,42,56,12,ES_RIGHT
+    LTEXT           "Elasticity",IDC_INPUT_6,30,41,35,8
+    LTEXT           "Pa",IDC_STATIC,136,42,15,8
+    LTEXT           "2",IDC_STATIC,145,20,8,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ESFEA Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ESFEA\0"
+            VALUE "LegalCopyright", "Copyright (C) 2003 ESFEA\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ESFEA.EXE\0"
+            VALUE "ProductName", "ESFEA Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_PANEL_TREE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 313
+    END
+
+    IDD_PANEL_NUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_MATRIX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDP_NODES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 529
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDP_SEL_ND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDP_LOAD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 524
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDP_ANIMATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 529
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDP_MODAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 529
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDP_ELEMENTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 524
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Recent File",                ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ESFEA...",             ID_APP_ABOUT
+    END
+END
+
+IDR_CAMERA_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP ""
+    BEGIN
+        MENUITEM "&Ortho Biaxial",              ID_VIEW_ORTHO_BIAXI
+        MENUITEM "O&rtho Trackball",            ID_VIEW_ORTHO_TRACK
+        MENUITEM SEPARATOR
+        MENUITEM "&Perspective Biaxial",        ID_VIEW_PERSP_BIAXI
+        MENUITEM "&Perspecti&ve Trackball",     ID_VIEW_PERSP_TRACK
+        MENUITEM SEPARATOR
+        MENUITEM "X - &Z Plane",                ID_VIEW_X_Z_PLANE
+        MENUITEM "X - &Y Plane",                ID_VIEW_X_Y_PLANE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_ROTATE       BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BITMAP_SCALE        BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_BITMAP_MOVE         BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_DONUT               BITMAP  DISCARDABLE     "res\\donut.bmp"
+IDB_TREE_LIST           BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
+IDB_TL_OFF              BITMAP  DISCARDABLE     "res\\bmp00006.bmp"
+IDB_LONG_GREEN          BITMAP  DISCARDABLE     "res\\tl_off1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_FINGER              CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_MOVE                CURSOR  DISCARDABLE     "res\\Trck4way.cur"
+IDC_ROTATE              CURSOR  DISCARDABLE     "res\\Nodrop.cur"
+IDC_SCALE               CURSOR  DISCARDABLE     "res\\Trckwe.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "ESFEA"
+    IDS_FILENAME            "                                                 "
+    IDS_MODE                "                                                            "
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "ESFEA"
+    AFX_IDS_IDLEMESSAGE     " "
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+    ID_HELP_INDEX           "Opens Help\nHelp Topics"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+    ID_HELP_USING           "Display instructions about how to use help\nHelp"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nHelp"
+    ID_HELP                 "Display help for current task or command\nHelp"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Recent File"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ESFEA2D.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,203 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ESFEA2D - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\MONA\AppData\Local\Temp\RSPBF8D.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"debug_intermediate/" /Fp"debug_intermediate/ESFEA2D.pch" /Yu"stdafx.h" /Fo"debug_intermediate/" /Fd"debug_intermediate/" /FD /GZ /c 
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\ChildView.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\CtrlPaneBar.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\DlgMatrix.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\ESFEA2D.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\FileIn.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\MainFrm.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\PanelAnimate.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\PanelBase.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\PanelElements.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\PanelLoad.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\PanelModal.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\PanelNodes.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\PanelNum.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\PanelSelectNode.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\PanelTree.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SejikaSheet.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SejikaStatus.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJBlock.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJBounds.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJBox.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJLine.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJMat3.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJMatrix.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJNode.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJNodeCam.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJNodeMesh.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJNodePush.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJNodeSwitch.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJNodeTransManip.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJPoint.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJRotation.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJSG.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJVec2s.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJVec3.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJVector.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\SJView.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\ThreadSejika.cpp"
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\WRITEAVI.CPP"
+]
+Creating command line "cl.exe @C:\Users\MONA\AppData\Local\Temp\RSPBF8D.tmp" 
+Creating temporary file "C:\Users\MONA\AppData\Local\Temp\RSPBF8E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"debug_intermediate/" /Fp"debug_intermediate/ESFEA2D.pch" /Yc"stdafx.h" /Fo"debug_intermediate/" /Fd"debug_intermediate/" /FD /GZ /c 
+"C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\MONA\AppData\Local\Temp\RSPBF8E.tmp" 
+Creating temporary file "C:\Users\MONA\AppData\Local\Temp\RSPBF8F.tmp" with contents
+[
+opengl32.lib glu32.lib vfw32.lib /nologo /subsystem:windows /incremental:yes /pdb:"debug_output/ESFEA2D.pdb" /debug /machine:I386 /out:"debug_output/ESFEA2D.exe" /pdbtype:sept 
+".\debug_intermediate\ChildView.obj"
+".\debug_intermediate\CtrlPaneBar.obj"
+".\debug_intermediate\DlgMatrix.obj"
+".\debug_intermediate\ESFEA2D.obj"
+".\debug_intermediate\FileIn.obj"
+".\debug_intermediate\MainFrm.obj"
+".\debug_intermediate\PanelAnimate.obj"
+".\debug_intermediate\PanelBase.obj"
+".\debug_intermediate\PanelElements.obj"
+".\debug_intermediate\PanelLoad.obj"
+".\debug_intermediate\PanelModal.obj"
+".\debug_intermediate\PanelNodes.obj"
+".\debug_intermediate\PanelNum.obj"
+".\debug_intermediate\PanelSelectNode.obj"
+".\debug_intermediate\PanelTree.obj"
+".\debug_intermediate\SejikaSheet.obj"
+".\debug_intermediate\SejikaStatus.obj"
+".\debug_intermediate\SJBlock.obj"
+".\debug_intermediate\SJBounds.obj"
+".\debug_intermediate\SJBox.obj"
+".\debug_intermediate\SJLine.obj"
+".\debug_intermediate\SJMat3.obj"
+".\debug_intermediate\SJMatrix.obj"
+".\debug_intermediate\SJNode.obj"
+".\debug_intermediate\SJNodeCam.obj"
+".\debug_intermediate\SJNodeMesh.obj"
+".\debug_intermediate\SJNodePush.obj"
+".\debug_intermediate\SJNodeSwitch.obj"
+".\debug_intermediate\SJNodeTransManip.obj"
+".\debug_intermediate\SJPoint.obj"
+".\debug_intermediate\SJRotation.obj"
+".\debug_intermediate\SJSG.obj"
+".\debug_intermediate\SJVec2s.obj"
+".\debug_intermediate\SJVec3.obj"
+".\debug_intermediate\SJVector.obj"
+".\debug_intermediate\SJView.obj"
+".\debug_intermediate\StdAfx.obj"
+".\debug_intermediate\ThreadSejika.obj"
+".\debug_intermediate\WRITEAVI.OBJ"
+".\debug_intermediate\ESFEA2D.res"
+]
+Creating command line "link.exe @C:\Users\MONA\AppData\Local\Temp\RSPBF8F.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ChildView.cpp
+CtrlPaneBar.cpp
+DlgMatrix.cpp
+ESFEA2D.cpp
+FileIn.cpp
+C:\DATA\CDs\RETREIVED\02-10-03\CURRENT\ESFEA2D\FileIn.cpp(57) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+MainFrm.cpp
+PanelAnimate.cpp
+PanelBase.cpp
+PanelElements.cpp
+PanelLoad.cpp
+PanelModal.cpp
+PanelNodes.cpp
+PanelNum.cpp
+PanelSelectNode.cpp
+PanelTree.cpp
+SejikaSheet.cpp
+SejikaStatus.cpp
+SJBlock.cpp
+SJBounds.cpp
+SJBox.cpp
+Generating Code...
+Compiling...
+SJLine.cpp
+SJMat3.cpp
+SJMatrix.cpp
+SJNode.cpp
+SJNodeCam.cpp
+SJNodeMesh.cpp
+SJNodePush.cpp
+SJNodeSwitch.cpp
+SJNodeTransManip.cpp
+SJPoint.cpp
+SJRotation.cpp
+SJSG.cpp
+SJVec2s.cpp
+SJVec3.cpp
+SJVector.cpp
+SJView.cpp
+ThreadSejika.cpp
+WRITEAVI.CPP
+Generating Code...
+Linking...
+LINK : LNK6004: debug_output/ESFEA2D.exe not found or not built by the last incremental link; performing full link
+Creating temporary file "C:\Users\MONA\AppData\Local\Temp\RSPEE3D.tmp" with contents
+[
+/nologo /o"debug_output/ESFEA2D.bsc" 
+".\debug_intermediate\StdAfx.sbr"
+".\debug_intermediate\ChildView.sbr"
+".\debug_intermediate\CtrlPaneBar.sbr"
+".\debug_intermediate\DlgMatrix.sbr"
+".\debug_intermediate\ESFEA2D.sbr"
+".\debug_intermediate\FileIn.sbr"
+".\debug_intermediate\MainFrm.sbr"
+".\debug_intermediate\PanelAnimate.sbr"
+".\debug_intermediate\PanelBase.sbr"
+".\debug_intermediate\PanelElements.sbr"
+".\debug_intermediate\PanelLoad.sbr"
+".\debug_intermediate\PanelModal.sbr"
+".\debug_intermediate\PanelNodes.sbr"
+".\debug_intermediate\PanelNum.sbr"
+".\debug_intermediate\PanelSelectNode.sbr"
+".\debug_intermediate\PanelTree.sbr"
+".\debug_intermediate\SejikaSheet.sbr"
+".\debug_intermediate\SejikaStatus.sbr"
+".\debug_intermediate\SJBlock.sbr"
+".\debug_intermediate\SJBounds.sbr"
+".\debug_intermediate\SJBox.sbr"
+".\debug_intermediate\SJLine.sbr"
+".\debug_intermediate\SJMat3.sbr"
+".\debug_intermediate\SJMatrix.sbr"
+".\debug_intermediate\SJNode.sbr"
+".\debug_intermediate\SJNodeCam.sbr"
+".\debug_intermediate\SJNodeMesh.sbr"
+".\debug_intermediate\SJNodePush.sbr"
+".\debug_intermediate\SJNodeSwitch.sbr"
+".\debug_intermediate\SJNodeTransManip.sbr"
+".\debug_intermediate\SJPoint.sbr"
+".\debug_intermediate\SJRotation.sbr"
+".\debug_intermediate\SJSG.sbr"
+".\debug_intermediate\SJVec2s.sbr"
+".\debug_intermediate\SJVec3.sbr"
+".\debug_intermediate\SJVector.sbr"
+".\debug_intermediate\SJView.sbr"
+".\debug_intermediate\ThreadSejika.sbr"
+".\debug_intermediate\WRITEAVI.SBR"]
+Creating command line "bscmake.exe @C:\Users\MONA\AppData\Local\Temp\RSPEE3D.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ESFEA2D.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
